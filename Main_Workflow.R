@@ -3,7 +3,7 @@
 
 if (!requireNamespace("BiocManager"))
   install.packages("BiocManager")
-BiocManager::install(c("limma", "edgeR", "Glimma", "org.Mm.eg.db", "gplots", "RColorBrewer", "NMF", "BiasedUrn"),force=TRUE)
+BiocManager::install(c("limma", "edgeR", "Glimma", "org.Mm.eg.db", "gplots", "RColorBrewer", "NMF", "BiasedUrn"),force=TRUE,dependencies = TRUE)
 
 
 library(edgeR)
